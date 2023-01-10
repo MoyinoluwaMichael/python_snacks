@@ -1,6 +1,6 @@
 import enum
 
-from code_war.credit_card_validator.credit_card_type import CreditCardType
+from python_assignments.credit_card_validator.credit_card_type import CreditCardType
 
 
 class CCValidator:
