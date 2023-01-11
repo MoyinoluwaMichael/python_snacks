@@ -1,6 +1,8 @@
-import enum
-
 from python_assignments.credit_card_validator.credit_card_type import CreditCardType
+
+
+def fry():
+    return 3
 
 
 class CCValidator:
@@ -38,12 +40,12 @@ class CCValidator:
 
     def set_credit_card_number_in_list(self, card_number):
         for i in range(self.credit_card_digit_length):
-            self.credit_card_number_in_list.append(int (card_number.__getitem__(i)))
+            self.credit_card_number_in_list.append(int(card_number.__getitem__(i)))
 
     def __add_digits_in_odd_places(self):
         total = 0
-        for i in range(self.credit_card_digit_length -1, -1, -2):
-            total += int (self.credit_card_number_in_list[i])
+        for i in range(self.credit_card_digit_length - 1, -1, -2):
+            total += int(self.credit_card_number_in_list[i])
         return total
 
     def __set_credit_card_type(self):
@@ -67,9 +69,9 @@ class CCValidator:
     def __display_result(self):
         print(f"""
         ************************************************************
-        {'**Credit Card Type: ' + str (self.credit_card_type.name)}
+        {'**Credit Card Type: ' + str(self.credit_card_type.name)}
         {'**Credit Card Number: ' + self.credit_card_number}
-        {'**Credit Card Digit Length: '+ str(self.credit_card_digit_length)}
-        {'**Credit Card Validity Status: '+ self.credit_card_status}
+        {'**Credit Card Digit Length: ' + str(self.credit_card_digit_length)}
+        {'**Credit Card Validity Status: ' + self.credit_card_status}
         ************************************************************
                         """)
