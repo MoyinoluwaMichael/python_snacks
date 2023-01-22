@@ -1,6 +1,9 @@
-from ccvalidator import CCValidator
+from ccvalidator import CcValidator
 
 if __name__ == '__main__':
-    validator_object = CCValidator
-    CCValidator.confirm_validity(validator_object, "43885760184165645466576756560707")
+    validator_object = CcValidator()
+    # CcValidator.confirm_validity(validator_object, "438876756560707")
+    validator_object.confirm_validity("438876756560707")
+
+
 
