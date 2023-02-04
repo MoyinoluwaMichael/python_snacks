@@ -1,8 +1,3 @@
-from unittest import TestCase
+import pickle
 
-
-class TestTest(TestCase):
-    test = TestCase("none")
-
-    def test_creation(self):
-        total: int = 5
+word ="Hey"
